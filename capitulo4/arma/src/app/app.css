@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(165, 165, 42);
+    color: brown;
+}
+
+.navbar-brand{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.tarjeta{
+    width: 300px;
+    border: 2px solid rgb(0, 255, 76);
+    background-color: #002f2a;
+    color: white;
+    align-items: left;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 40px;
+}
