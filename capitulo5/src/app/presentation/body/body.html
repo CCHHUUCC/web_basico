@@ -1,0 +1,19 @@
+<div class="containter" py-5>
+    <div class="card shadow mx-auto">
+        <div class="card-body text-center">
+            <h1>{{data()}}</h1>
+            
+            <div class="d-flex justify-content-center gap-5">
+                <button class="btn" class="btn btn-outline-danger" (click)="dec()">-</button>
+                <button class="btn" class="btn btn-outline-success" (click)="inc()">+</button>
+            </div>
+            
+            <div class="d-flex gap-2">
+                <input class="form-control" type="number" #textInput (input)="dataInput.set(textInput.value)">
+<!--                <h1>{{dataInput()}}</h1>         -->>
+                <button class="btn btn-outline-warning" (click)="reload()">recargar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
