@@ -1,0 +1,10 @@
+<div class="card shadow border-1">
+    <div class="card-body">
+        <h1 class="card-title mb-3" class="text-center">{{pet()?.name}}</h1>
+        <p class="card-text mb-2">Raza: {{pet()?.breed}}</p>
+        <p class="card-text mb-2">Edad: {{pet()?.age}}</p>
+        <span class="badge text-bg-primary mb-3">{{pet()?.specie}}</span>
+        <br>
+        <button class="btn btn-danger" (click)="emitNamePet()">Eliminar</button>    
+    </div>
+</div>

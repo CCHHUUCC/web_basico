@@ -1,0 +1,27 @@
+<div class="container py-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <h2 class="text-center mb-4">Razas de Perros</h2>
+
+            <div class="row g-3">
+                @for (t of products(); track $index) {
+                    <div class="col-12 col-lg-4">
+                        <div class="card h-100 shadow-sm"> 
+                            <img [src]="t.urlImage" class="card-img-top dog-image" [alt]="t.name">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-center">{{t.name}}</h5>
+                                <p class="card-text text-secondary">{{t.description}}</p>
+
+                                <div class="text-center">
+                                    <span class="badge bg-success p-2">Esperanza de vida: {{t.maxLife}} años</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
